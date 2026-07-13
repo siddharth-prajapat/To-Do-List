@@ -1,0 +1,155 @@
+body {
+    /* background: linear-gradient(135deg, #ee3f6f 0%, #a04bc4 50%, #4d5fee 100%);
+    font-family: Arial, Helvetica, sans-serif; */
+    animation: colorChange 5s infinite;
+}
+@keyframes colorChange {
+    /* 0%{background: linear-gradient(135deg, #ee3f6f 0%, #a04bc4 50%, #4d5fee 100%);}
+    50%{background: linear-gradient(135deg, #e93209 0%, #b828f6 50%, #12e54a 100%);}
+    100%{background: linear-gradient(135deg, #3820ea 0%, #dab40c 50%, #eeeff8 100%);} */
+    0%{background-color: blue;}
+    25%{background-color: rgb(241, 12, 12);}
+    50%{background-color: cyan;}
+    75%{background-color: chartreuse;}
+    100%{background-color: blueviolet;}
+}
+#main{
+display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:0;
+    height:91vh;
+}
+#container {
+    background-color: white;
+    width: 600px;
+    height: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+      background: rgba(255, 255, 255, 0.1);  /* transparent white */
+  backdrop-filter: blur(10px);            /* yeh main magic hai */
+  -webkit-backdrop-filter: blur(10px);    /* Safari ke liye */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* light border */
+  border-radius: 16px;  
+}
+#heading {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    text-decoration: underline;
+    color:white;
+}
+#input {
+    width: 300px;
+    height: 30px;
+    border-radius: 50px;
+    padding-left: 20px;
+    text-decoration: none;
+    font-family:Arial, Helvetica, sans-serif;
+    box-shadow: 0px 4px 6px rgba(9, 7, 7, 0.7);
+}
+.add {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+#buton {
+    width: 100px;
+    border-radius: 50px;
+    background-color:blue;
+    border-color: blue;
+    color:white;
+    font-family:Arial, Helvetica, sans-serif;
+    box-shadow: 0px 4px 6px rgba(9, 7, 7, 0.7);
+    box-decoration-break:clone;
+}
+
+#list {
+    /* background-color: black; */
+    width: 100%;
+    height: 100%;
+    color: white;
+    margin-top:20px;
+   flex-direction: row-reverse;
+   font-family:Arial, Helvetica, sans-serif;
+   
+}
+.task-item{
+    display:flex;
+    justify-content:space-between;
+    font-size:15px;
+    overflow:hidden;
+}
+.task-item span{
+    overflow-wrap:break-word;
+     word-wrap: break-word; 
+     flex:1;
+     min-width:0;
+}
+.ceckbox{
+    width:20px;
+    height:20px;
+    background-color:black;
+    color:black;
+}
+#delet{
+    width:20px;
+    height:20px;
+}
+#delet{
+    background:transparent;
+}
+h3,a{
+    color:white;
+    font-family:Arial, Helvetica, sans-serif;
+    margin-top:0px;
+    text-decoration:none;
+    font-size:20px;
+}
+h3:hover,a:hover{
+    color:blue;
+    text-decoration: underline dotted;
+    text-shadow : 2px 5px 7px rgba(9, 7, 7, 0.7)
+}
+@media(max-width: 780px){
+    #main{
+display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:0;
+    height:91vh;
+}
+/* #main{
+      width:100%;
+    height:100%;
+} */
+#container{
+    max-width:90%;
+    margin: 40px auto;
+    height: 70%;
+   border-radius: 16px;
+    overflow: hidden;
+   
+    
+}
+.add{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#buton{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+     
+}
+/*  */
+h3,a{
+    display:flex;
+    margin:0 auto;
+   margin-top: 24px;
+}
+    
+}
